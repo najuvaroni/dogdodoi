@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/mobile.css">
+    <title>Login</title>
+</head>
+<body>
+    <header id="header">
+       <img src="../img/logo.png" alt="Logo">
+        <nav> 
+            <a href="index.html">Sair</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="formulario">
+            <div class="formulario-title">
+                <h1>Por favor, inscreva-se</h1>
+            </div>
+            <div class="formulario-form">
+                <form action="">
+                    <div>
+                        <label for="email">E-Mail</label>
+                        <input type="email" name="email" id="email" placeholder="Informe seu e-mail" required>
+                    </div>
+                    <div>
+                        <label for="senha">Senha</label>
+                        <input type="password" name="senha" id="senha" placeholder="Informe sua senha" required minlength="8">
+                    </div>
+                    <div>
+                        <a href="dashboard.html">
+                            <button type="button" class="logar">Logar</button>
+                        </a>
+                        <a href="cadastro.html">
+                            <button type="button" class="cadastro">Ainda não cadastrado? Cadastra-se</button>
+                        </a>
+                        
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

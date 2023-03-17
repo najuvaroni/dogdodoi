@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/mobile.css">
+    <title>Consultas</title>
+</head>
+<body class="pag_consulta">
+    <header id="header">
+        <img src="../img/logo.png" alt="Logo">
+        <nav>
+            <a href="index.html" type="button">Sair</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="formulario">
+            <div id="formulario-texto"> 
+                <h3>Registrar uma consulta:</h3>
+            </div>
+
+            <div id="formulario-formulario">
+                <form action="">
+
+                    <div class="grid-3">
+                        <div class="formulario-formulario-nome">
+                            <label for="nome">Nome completo do cliente:</label>
+                            <input type="text" name="nome" id="nome" required minlength="4" placeholder="Digite aqui">
+                        </div>
+                        <div class="formulario-formulario-data">
+                            <label for="text">Data:</label>
+                            <input type="date" name="data" id="data" required>
+                        </div>
+                        <div class="formulario-formulario-hora">
+                            <label for="text">Hora da consulta:</label>
+                            <input type="time" name="hora" id="hora" required minlength="10" >
+                        </div>
+                    </div>
+
+                    <div class="formulario-formulario-obs">
+                        <label for="text">Observações adicionais:</label>
+                        <textarea name="" id="" cols="30" rows="10"></textarea>
+                    </div>
+
+                    <div class="formulario-formulario-button">
+                        <button class="buttonsalvar" type="submit">Salvar</button>
+                        <button class="buttoncancelar" type="submit">Cancelar</button>
+                    </div>
+
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+</body>
+</html>

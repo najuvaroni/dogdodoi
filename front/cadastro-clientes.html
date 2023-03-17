@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/mobile.css">
+    <title>Cadastro de Clientes</title>
+
+</head>
+<!--cabeçalho inicial-->
+
+<body>
+    <header id="header">
+        <img src="../img/logo.png" alt="Logo">
+        <nav>
+            <a href="index.html">Sair</a>
+        </nav>
+    </header>
+
+    <main class="cadastro-clientes">
+        <h1>Cadastro de clientes</h1>
+        <form action="">
+            <div class="primeira-grid">
+                <div id="formulario-nome-nomecompleto"> <!--Nome-->
+                    <label for="nome">Nome completo</label>
+                    <input type="text" name="Nome completo" id="Nome" required>
+                </div>
+                <!--email-->
+                <div class="formulario-email">
+                    <label for="email">E-mail</label>
+                    <input type="email" name="email" id="email" required>
+                </div>
+            </div>
+
+            <div class="segunda-grid">
+                <!--cpf-->
+                <div class="formulario-cpf">
+                    <label for="cpf">CPF</label>
+                    <input type="text" name="CPF" id="cpf" required minlength="13" maxlength="13">
+                </div>
+                <!--telefone-->
+                <div class="formulario-whatsaap">
+                    <label for="WhatsApp">WhatsApp</label>
+                    <input type="tel" name="WhatsApp" id="WhatsApp" required minlength="10">
+                </div>
+                <!--telefone reserva-->
+                <div class="formulario-telefone">
+                    <label for="outro contato">Outro contato</label>
+                    <input type="tel" name="Outro contato" id="Outro contato" required minlength="10">
+                </div>
+                <!--data de nascimento-->
+                <div class="formulario-data">
+                    <label for="data de nascimento">Data de nascimento</label>
+                    <input type="date" name="Data de nascimento" id="Data de nascimento" placeholder="dd/mm/yyyy"
+                        required minlength="8" maxlength="8">
+                </div>
+            </div>
+
+            <h2>Endereço</h2>
+            <div class="terceira-grid">
+                <div class="endereco-cep">
+                    <label for="CEP">CEP</label>
+                    <input type="text" name="CEP" id="CEP" required minlength="8" maxlength="8">
+                </div>
+
+                <div class="endereco-cidade">
+                    <label for="Cidade">Cidade</label>
+                    <input type="text" name="Cidade" id="Cidade" required>
+                </div>
+
+                <div class="endereco-uf">
+                    <label for="UF">UF</label>
+                    <input type="text" name="UF" id="UF" required>
+                </div>
+            </div>
+            <div class="quarta-grid">
+                <div class="rua-e-bairro">
+                    <label for="Rua e bairro">Rua e bairro</label>
+                    <input type="text" name="Rua" id="Rua" required>
+                </div>
+
+                <div>
+                    <label for="Número">Número</label>
+                    <input type="text" name="número" id="UF" required>
+                </div>
+            </div>
+            <div class="botao">
+                <button type="submit" class="salvar">Salvar</button>
+                <button type="reset" class="cancelar">Cancelar</button>
+            </div>
+        </form>
+    </main>
+</body>
+
+</html>
